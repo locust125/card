@@ -93,10 +93,12 @@ class _SettingsPageState extends State<SettingsPage> {
               height: 50,
             ),
             Center(
-              child: OutlineButton(
-                padding: EdgeInsets.symmetric(horizontal: 40),
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20)),
+              child: OutlinedButton(
+                style: OutlinedButton.styleFrom(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20)
+                  )
+                ),
                 onPressed: () {},
                 child: Text("SIGN OUT",
                     style: TextStyle(
@@ -138,7 +140,7 @@ class _SettingsPageState extends State<SettingsPage> {
             builder: (BuildContext context) {
               return AlertDialog(
                 title: Text(title),
-                content: Column(
+                content: const Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     Text("Option 1"),
@@ -147,11 +149,11 @@ class _SettingsPageState extends State<SettingsPage> {
                   ],
                 ),
                 actions: [
-                  FlatButton(
+                  TextButton(
                       onPressed: () {
                         Navigator.of(context).pop();
                       },
-                      child: Text("Close")),
+                      child: const Text("Close")),
                 ],
               );
             });

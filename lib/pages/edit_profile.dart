@@ -119,10 +119,10 @@ class _EditProfilePageState extends State<EditProfilePage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  OutlineButton(
-                    padding: EdgeInsets.symmetric(horizontal: 50),
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(20)),
+                  OutlinedButton(
+                    // padding: EdgeInsets.symmetric(horizontal: 50),
+                    // shape: RoundedRectangleBorder(
+                        // borderRadius: BorderRadius.circular(20)),
                     onPressed: () {},
                     child: Text("CANCEL",
                         style: TextStyle(
@@ -130,13 +130,13 @@ class _EditProfilePageState extends State<EditProfilePage> {
                             letterSpacing: 2.2,
                             color: Colors.black)),
                   ),
-                  RaisedButton(
+                  ElevatedButton(
                     onPressed: () {},
-                    color: Colors.green,
-                    padding: EdgeInsets.symmetric(horizontal: 50),
-                    elevation: 2,
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(20)),
+                    // color: Colors.green,
+                    // padding: EdgeInsets.symmetric(horizontal: 50),
+                    // elevation: 2,
+                    // shape: RoundedRectangleBorder(
+                        // borderRadius: BorderRadius.circular(20)),
                     child: Text(
                       "SAVE",
                       style: TextStyle(

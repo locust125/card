@@ -1,4 +1,5 @@
 
+import 'package:card/pages/edit_profile.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Pago con tarjeta'),
         ),
-        body: const (),
+        body: SettingsUI(),
       ),
     );
   }
